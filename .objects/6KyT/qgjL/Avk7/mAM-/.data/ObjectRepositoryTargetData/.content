@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FSoAgwNDtEWsO3lXzSq6CQ" Reference="N4MTMs1NckefVWnATUiETw/mAM-jf6yEUi5gKZVOOYF4w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="654353a7-ee37-43c1-8471-33a2dd3c1cbe" CvElementArea="1181, 675, 47, 42" CvTextArea="1188, 686, 31, 18" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1184, 677, 41, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="ba5c138a-c967-4148-b8b5-73f5c0e76aab" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="f541887a90cfcd513ef80c03126d9505.png" xmlns="">0tWqWmK3lWUadbpVahtg6GQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

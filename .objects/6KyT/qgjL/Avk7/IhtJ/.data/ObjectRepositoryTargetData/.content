@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sjOcpryWtE6XN23RUcGaoQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="3b3765d9-752b-4058-bde7-936f33ac3e5a" CvTextArea="944, 596, 42, 24" CvTextArgument="|1.12" CvType="Text" DesignTimeRectangle="768, 565, 217, 65" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='payableAmountAmount' tag='INPUT' type='text' class='input-control ng-pristine ng-valid ng-touched' aaname=' Amount*' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="069dd6f9-4856-4750-838e-df280075a2bc" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3b3765d9-752b-4058-bde7-936f33ac3e5a" CvTextArea="656, 570, 64, 15" CvTextArgument="Amount*" CvType="Text" DesignTimeRectangle="660, 565, 325, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='payableAmount' tag='LABEL' class='input-label ng-star-inserted input-label-floating' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Amount*' /&gt;" Guid="cca58eec-bee7-4e47-8239-9295854c6ef7" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a1c0d9f9a752be914543dd8bba401d40.png" xmlns="">0AF0-NyNNGEe_hClDM_WPqA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

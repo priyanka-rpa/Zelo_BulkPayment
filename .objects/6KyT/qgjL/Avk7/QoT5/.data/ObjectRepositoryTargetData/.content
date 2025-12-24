@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Mqv0DUKoGkiALJ9hSUPY4Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="205374fb-94f4-4be9-91ed-3388076d513b" CvElementArea="408, 698, 438, 51" CvType="InputBox" DesignTimeRectangle="410, 700, 435, 47" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl class='p-dropdown-filter p-inputtext p-component' tag='INPUT' type='text' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="090735aa-dd68-40f6-a07c-e077f38ba4a3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="205374fb-94f4-4be9-91ed-3388076d513b" CvTextArea="404, 665, 195, 18" CvTextArgument="Internal Fund Transfers" CvType="Text" DesignTimeRectangle="404, 655, 417, 41" FullSelectorArgument="&lt;webctrl isleaf='1' parentid='paymentMethodId' tag='DIV' /&gt;" Guid="c076e738-0f49-41e1-88d3-a0b0a16ceec4" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9a49139dbd0bc1d150fc2d1d9bccfcee.png" xmlns="">0sD66IXjW3EyNrm2AUUsqaA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

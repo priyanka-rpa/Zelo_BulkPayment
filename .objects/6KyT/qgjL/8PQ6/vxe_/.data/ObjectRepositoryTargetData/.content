@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="N2zvoCuh00SwjR2mXwLN1w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="43007958-d68c-4033-a325-ff78331a59cf" CvElementArea="1108, 255, 27, 23" CvType="ArrowButton" DesignTimeRectangle="1113, 257, 18, 18" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='child-bread' tag='I' /&gt;" Guid="970c22cc-8455-46ce-832b-bb94adbbead5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="740ad6e06667b6cb73add002203df9d3.png" xmlns="">0r7-EQXSTt0WoltZkWrlgxQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

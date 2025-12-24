@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Debit Account",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "ecEJF-rwzU-k9EF7mGdddA",
+  "Reference": "N4MTMs1NckefVWnATUiETw/ecEJF-rwzU-k9EF7mGdddA",
+  "ParentRef": "N4MTMs1NckefVWnATUiETw/Avk7KwjpZ0iSCvsCN9BaIA",
+  "Created": "2025-10-27T12:09:58.0428659Z",
+  "Updated": "2025-10-27T12:09:58.0428659Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

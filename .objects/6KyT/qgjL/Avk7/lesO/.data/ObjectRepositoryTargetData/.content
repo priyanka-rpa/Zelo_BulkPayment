@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sqWVtbZ2TEWdaE_UkwTFPQ" Reference="N4MTMs1NckefVWnATUiETw/lesOnzLlw0-KPxjf3xozjA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="229d9bd6-4fd0-41a4-80f3-fb958b2c393b" CvElementArea="1321, 378, 280, 94" CvTextArea="1388, 435, 145, 24" CvTextArgument="Single Transfer" CvType="Button" DesignTimeRectangle="1323, 420, 276, 48" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Single Transfer ' parentid='main-container' tag='DIV' /&gt;" Guid="2cd4a39e-acfb-4115-bfcb-69189b6d496d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="229d9bd6-4fd0-41a4-80f3-fb958b2c393b" CvElementArea="1321, 378, 280, 94" CvType="Button" DesignTimeRectangle="1449, 397, 24, 21" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;div&amp;gt;base-root&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;dashboard-root&amp;gt;div&amp;gt;div&amp;gt;app-balance-card&amp;gt;div&amp;gt;div&amp;gt;app-balance-card-quick-links&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;aps-icon&amp;gt;i' idx='2' parentid='main-container' tag='I' /&gt;" Guid="69fa7f19-35b2-4e65-987f-7c7946ad52cd" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2125d94a6d753b0ae4bcc00ea4bcf0f2.png" xmlns="">03RzH4AvMzk-XnYfHc1f0ag</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

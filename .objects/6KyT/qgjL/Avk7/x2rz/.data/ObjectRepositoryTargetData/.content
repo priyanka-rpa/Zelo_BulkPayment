@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EIBI6HMRXkOqFpk5DdQQgw" Reference="N4MTMs1NckefVWnATUiETw/x2rzjoX5PEmJ64-8o3O2vQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="774e5cb4-1ec1-4585-a1b7-6980f00f5f5e" CvTextArea="93, 296, 105, 19" CvTextArgument="Dashboard" CvType="Text" DesignTimeRectangle="84, 291, 126, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Dashboard' class='px-2' parentid='main-container' tag='DIV' /&gt;" Guid="7a583e2d-74da-48a2-b21e-37d5ea296797" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="774e5cb4-1ec1-4585-a1b7-6980f00f5f5e" CvTextArea="422, 296, 82, 19" CvTextArgument="Payments" CvType="Text" DesignTimeRectangle="424, 289, 81, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Payments ' parentid='main-container' tag='DIV' type='' class='inline-block vertical-align-top pt-0-5 text-sm ng-star-inserted' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Payments' /&gt;" Guid="3477b568-0689-4306-b6c9-954629dfb0d5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d3ad421de3f0d47a4c3445a7de86456d.png" xmlns="">0R3-9jOp8DEmytGhx1s0YHw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

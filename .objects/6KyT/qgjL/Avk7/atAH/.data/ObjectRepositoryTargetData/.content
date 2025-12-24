@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-0eteXMCgkCYzc1xswQDNA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="3984deeb-1a73-42ae-b9e5-47b602431e60" CvElementArea="1779, 917, 98, 49" CvTextArea="1802, 930, 51, 18" CvTextArgument="NEXT" CvType="Button" DesignTimeRectangle="1782, 919, 93, 44" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname=' NEXT ' parentid='main-container' tag='BUTTON' type='' class='ml-3 btn btn-md btn-primary text-sm text-semi-bold ng-star-inserted' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='NEXT' /&gt;" Guid="c9cae33d-a29a-4fde-9979-fb3f1295d974" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3984deeb-1a73-42ae-b9e5-47b602431e60" CvElementArea="1779, 917, 98, 49" CvTextArea="1802, 930, 51, 18" CvTextArgument="NEXT" CvType="Button" DesignTimeRectangle="1804, 929, 48, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' NEXT ' class='ng-star-inserted' parentid='main-container' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='NEXT' /&gt;" Guid="767b5e5d-d985-4530-88a2-df90e56a7df0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fc0a9c9d83b6ed2d17741bf8a8e7b5a4.png" xmlns="">0AxxTX-jAwUGqs48qHdwsMA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

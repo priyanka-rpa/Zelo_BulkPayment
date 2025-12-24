@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Z8RmVy4P5UK2KepfEqJQ4Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="8114434f-6b77-4eb4-9240-0b6baad19304" CvType="AnyWordGroup" DesignTimeRectangle="956, 445, 540, 67" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='ng-star-inserted' parentid='quickPayResponse' tag='DIV' type='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;" Guid="e657d4f1-5648-484e-a17a-6ae41592e33d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8114434f-6b77-4eb4-9240-0b6baad19304" CvTextArea="960, 456, 212, 16" CvTextArgument="Transaction Date and Time" CvType="Text" DesignTimeRectangle="962, 477, 528, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Transaction Date and Time ' parentid='quickPayResponse' tag='SPAN' /&gt;&lt;nav up='4' /&gt;&lt;webctrl aaname='*' class='ng-star-inserted' parentid='quickPayResponse' tag='DIV' /&gt;" Guid="fd0cedfc-bfc8-4f50-a91f-a47ce6049655" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a627ecf93dd931c0c0e911290cfc61b5.png" xmlns="">0TgSRjexSbkW-nXaMe8t9Eg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9rg1bEiZnEqEAqQ4nTleQw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="f2941655-17e2-4031-8505-d5f56ebd6406" CvType="AnyWordGroup" DesignTimeRectangle="422, 543, 528, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Debit Account ' parentid='quickPayResponse' tag='SPAN' /&gt;&lt;nav up='4' /&gt;&lt;webctrl aaname='*' class='ng-star-inserted' parentid='quickPayResponse' tag='DIV' /&gt;" Guid="e3d1cf87-8d15-483f-b447-20f82599dee2" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0b66f0d6-aa71-4d75-9b68-c9e715b08fdd" CvTextArea="420, 522, 114, 16" CvTextArgument="Debit Account" CvType="Text" DesignTimeRectangle="422, 520, 112, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Debit Account ' parentid='quickPayResponse' tag='SPAN' type='' class='p-element' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Debit Account' /&gt;" Guid="352ea7b0-b0a7-4ec9-86ec-4339e07f15e3" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a025f9c0d92318374be056ff6108b7e2.png" xmlns="">0SzgfcuoT40arpnrY8LyEnA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

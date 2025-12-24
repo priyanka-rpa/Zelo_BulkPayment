@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="adcHn_bC0UavM02reSkXbA" Reference="N4MTMs1NckefVWnATUiETw/sbHvVgwR_EO-RebePstRWw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="906e618a-ec08-4acf-b389-f94d7b1dbffd" CvElementArea="814, 616, 187, 44" CvType="InputBox" DesignTimeRectangle="813, 589, 187, 72" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='payableAmountAmount' tag='INPUT' type='text' class='input-control ng-valid ng-dirty ng-touched' aaname=' Amount*' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="cb581766-827b-4990-aa2e-94af88ad5217" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="906e618a-ec08-4acf-b389-f94d7b1dbffd" CvTextArea="690, 594, 70, 16" CvTextArgument="Amount*" CvType="Text" DesignTimeRectangle="693, 589, 307, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='payableAmount' tag='LABEL' class='input-label ng-star-inserted input-label-floating' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Amount*' /&gt;" Guid="ac2d885e-0569-4d37-aefd-6b5e0a396e0d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3cb994411a4ee16771218aa5a531dd2b.png" xmlns="">0oqAoYDABaUy1AcsoRhwBsg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

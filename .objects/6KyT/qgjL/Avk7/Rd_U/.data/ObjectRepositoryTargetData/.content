@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="L34oSHSpTEOdBQJqhzREuQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="46da522b-45b1-400d-adf9-bdf8561efc8f" CvTextArea="1797, 450, 82, 19" CvTextArgument="INITIATE" CvType="Text" DesignTimeRectangle="1798, 448, 81, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='inline-block' parentid='main-container' tag='SPAN' type='' aaname='INITIATE' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='INITIATE' /&gt;" Guid="7d013f9d-ccf3-4488-acff-21f4461331d6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="46da522b-45b1-400d-adf9-bdf8561efc8f" CvTextArea="1772, 449, 107, 21" CvTextArgument="+ INITIATE" CvType="Text" DesignTimeRectangle="1755, 436, 137, 48" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='btn btn-md btn-tertiary mx-2 my-1 ng-star-inserted' aaname='INITIATE' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='INITIATE' /&gt;" Guid="a34cea82-e352-4d7c-89e7-b146d03aba0e" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="46da522b-45b1-400d-adf9-bdf8561efc8f" CvElementArea="1768, 444, 28, 30" CvType="Icon" DesignTimeRectangle="1774, 449, 18, 21" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;div&amp;gt;base-root&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;single-payment-request-generic-listing&amp;gt;aps-listing&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;aps-icon&amp;gt;i' parentid='main-container' tag='I' /&gt;" Guid="9b2508c8-6ee2-4ba4-996e-140191731378" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAZCAYAAAA14t7uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACpSURBVEhLY/hPI8CALkAtMIwN/vX27f8vN2+iC+MERBt8f+rU/2fCQv//+fIFXQorGDUYDkYNhgO4wT9fvfx/u6P9/7WyUqz4pLfX/4NGBv+vFBVgyIHw9arK/+9PnsQ0+NOVK/+PuTj9P2xpgRXv19H6v0dZ8f9hS3MMORi+P3UKpsGEANlBQQiMGgwHowbDwedr1/4/WjD//7/fv9GlsAKiDSYVDD2DARblNqnMKo/fAAAAAElFTkSuQmCC" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="41425623bef62ac07de866614e021ba4.png" xmlns="">05ybZ3YGlxUmYEPACJLrUig</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

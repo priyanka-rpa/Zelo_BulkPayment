@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome ADCB",
+  "Type": "Screen",
+  "Id": "Avk7KwjpZ0iSCvsCN9BaIA",
+  "Reference": "N4MTMs1NckefVWnATUiETw/Avk7KwjpZ0iSCvsCN9BaIA",
+  "ParentRef": "N4MTMs1NckefVWnATUiETw/qgjLufq1v0ivi8ao0WZ2lg",
+  "Created": "2025-07-28T11:15:58.5342644Z",
+  "Updated": "2025-07-28T11:15:58.5342644Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

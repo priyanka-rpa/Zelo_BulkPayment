@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="I2wYWwjIf0Clb9O6wFnW6w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" DesignTimeRectangle="962, 543, 528, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Debit Account Title ' parentid='quickPayResponse' tag='SPAN' /&gt;&lt;nav up='4' /&gt;&lt;webctrl aaname='*' class='ng-star-inserted' parentid='quickPayResponse' tag='DIV' /&gt;" Guid="0c1798a9-3c06-4b6d-bbff-47f93a5d4fb9" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Visible" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="0cd5db266f090623a65e2be3bf1ad427.png" xmlns="">0wO2FwS9ezUaGezAddzvL8Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

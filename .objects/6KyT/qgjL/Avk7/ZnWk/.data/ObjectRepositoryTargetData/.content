@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wvZUU6TnR0-jS7-zYw1Lhg" Reference="N4MTMs1NckefVWnATUiETw/ZnWkJkgOykOXNfEZvX9joA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="386ba76a-0c2c-494f-a9dc-b611c27b0d81" CvElementArea="1105, 790, 199, 55" CvTextArea="1119, 807, 166, 19" CvTextArgument="Payment Templates" CvType="Button" DesignTimeRectangle="1121, 799, 169, 37" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Payment Templates ' parentid='main-container' tag='SPAN' /&gt;" Guid="5d654b71-5d17-4964-beeb-86933f133e47" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="386ba76a-0c2c-494f-a9dc-b611c27b0d81" CvElementArea="315, 455, 24, 28" CvTextArea="93, 458, 93, 24" CvTextArgument="Payments" CvType="ArrowButton" DesignTimeRectangle="84, 453, 248, 30" FuzzySelectorArgument="&lt;webctrl type='' class='flex flex-nowrap justify-content-between' parentid='main-container' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Payments' /&gt;" Guid="71a8b9c9-f056-44d4-aa26-7eea4e9bab07" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8bc3d843d433ae1be7a93f08c6b7a174.png" xmlns="">0DYMTNnoRTUegM85Cwrch9w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

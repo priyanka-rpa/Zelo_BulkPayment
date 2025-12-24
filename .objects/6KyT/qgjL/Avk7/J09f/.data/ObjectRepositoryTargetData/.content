@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OtYXN0i1BUeIH9ner80KmQ" Reference="N4MTMs1NckefVWnATUiETw/J09f75lsAUuQZVjmFI1VhQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="198e3c3e-b97b-4873-8bfd-1b0b6167b1ae" CvElementArea="1409, 769, 108, 49" CvTextArea="1431, 783, 63, 18" CvTextArgument="CLOSE" CvType="Button" DesignTimeRectangle="1411, 771, 104, 44" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Close ' parentid='main-container' tag='BUTTON' /&gt;" Guid="d72a4573-a860-4d24-abbf-cd22061ff8da" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="198e3c3e-b97b-4873-8bfd-1b0b6167b1ae" CvTextArea="413, 401, 380, 22" CvTextArgument="Payment has been initiated successfully" CvType="Text" DesignTimeRectangle="414, 396, 379, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='main-container' tag='DIV' class='text-bold text-base' aaname=' Payment has been initiated successfully ' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Payment has been initiated successfully' /&gt;" Guid="0c4b6e36-83f0-47c2-b175-f9652ad59a25" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0df0073d7b35da0aa0ab4dd024ad234f.png" xmlns="">0CaOrFyAonkG9ts-dVLq8kw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5LSrAz6feEKfPWlzQ-eRyw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="3b62370c-8487-4f85-a8ed-df706b1e3741" CvType="AnyWordGroup" DesignTimeRectangle="422, 477, 528, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl class='ng-star-inserted' parentid='quickPayResponse' tag='DIV' /&gt;" Guid="fdb0a5dd-fda0-4da3-85cb-a0d1ef30b677" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3b62370c-8487-4f85-a8ed-df706b1e3741" CvTextArea="420, 456, 186, 16" CvTextArgument="ProCash Batch Number" CvType="Text" DesignTimeRectangle="422, 453, 185, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='quickPayResponse' tag='SPAN' type='' class='p-element' aaname=' ProCash Batch Number ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ProCash Batch Number' /&gt;" Guid="6b6ed8ee-b181-4b1c-bbf5-eaea9ec013be" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a5c53517ac4048be74b1d145fe277243.png" xmlns="">0sGK4lnJPS0SRES-lRV-pEA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Download",
+  "Type": "Element",
+  "Id": "Rcf_Xlhi8kedXDIKN2G_Qg",
+  "Reference": "N4MTMs1NckefVWnATUiETw/Rcf_Xlhi8kedXDIKN2G_Qg",
+  "ParentRef": "N4MTMs1NckefVWnATUiETw/Avk7KwjpZ0iSCvsCN9BaIA",
+  "Created": "2025-07-31T12:29:09.1448508Z",
+  "Updated": "2025-07-31T12:29:09.1448508Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

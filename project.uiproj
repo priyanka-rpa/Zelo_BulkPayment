@@ -1,0 +1,6 @@
+{
+  "Name": "BulkPayment_ZeloFinance",
+  "ProjectType": "Process",
+  "Description": "Robotic Enterprise Framework",
+  "MainFile": "Main.xaml"
+}

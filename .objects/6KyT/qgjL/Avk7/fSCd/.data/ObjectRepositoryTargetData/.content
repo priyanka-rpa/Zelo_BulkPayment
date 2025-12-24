@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="t4ZHXvv5v0OwUiE0auGxtg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="cff60c24-c4df-476f-aae8-432a86d688c1" CvElementArea="1321, 378, 280, 94" CvTextArea="1388, 435, 145, 24" CvTextArgument="Single Transfer" CvType="Button" DesignTimeRectangle="1323, 420, 276, 48" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Single Transfer ' parentid='main-container' tag='DIV' /&gt;" Guid="ea0a9e3e-9ef9-44a4-a9a3-6df2e60f8245" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d65e8d13f8fc6b4f27ddcbcae4ff6345.png" xmlns="">0MXALmj4AmEierU9InakcUQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

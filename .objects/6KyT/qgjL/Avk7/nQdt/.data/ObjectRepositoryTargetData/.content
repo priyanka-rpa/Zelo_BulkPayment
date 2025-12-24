@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UrPoJbmeRk6bZQS2E9wSig" Reference="N4MTMs1NckefVWnATUiETw/nQdtncq030GTDsZjZ6vcCQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="1c3400a0-3291-4472-9135-f0005a5830f2" CvElementArea="1811, 253, 58, 53" CvType="Button" DesignTimeRectangle="1817, 259, 47, 42" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;div&amp;gt;base-root&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;app-main-header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='8' parentid='main-container' tag='SPAN' /&gt;" Guid="0a37e267-b8a2-4ac6-b48a-f1e19c4a01cf" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1c3400a0-3291-4472-9135-f0005a5830f2" CvElementArea="1740, 251, 65, 56" CvType="Button" DesignTimeRectangle="1757, 262, 33, 33" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;div&amp;gt;base-root&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;app-main-header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;img' src='https://corporate.adcb.com:/login_api/rest/uiAssets/profile-image/default-profile-image.jpg' tag='IMG' /&gt;" Guid="75336a7b-bab9-48ba-ac38-541a5bea0e53" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fa479d6fdda66f186eb7f6bdfb1749cf.png" xmlns="">0HkAZZFe2Ykup74uiP63_Cg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

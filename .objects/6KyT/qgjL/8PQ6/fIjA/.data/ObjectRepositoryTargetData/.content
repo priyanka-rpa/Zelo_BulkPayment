@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZYeSXUkM9UGkA9gpbdcqRQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="7d9bbde0-5027-4f35-9d2d-1106a2b7595f" CvElementArea="443, 830, 464, 48" CvType="InputBox" DesignTimeRectangle="448, 830, 424, 47" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl isleaf='1' parentid='charges' tag='DIV' /&gt;" Guid="8ddd2079-f75b-4ea2-b344-7490a19d0340" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7d9bbde0-5027-4f35-9d2d-1106a2b7595f" CvTextArea="446, 812, 60, 19" CvTextArgument="Charge" CvType="Text" DesignTimeRectangle="448, 810, 58, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='charges' tag='SPAN' type='' class='label' aaname=' Charge' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Charge' /&gt;" Guid="4f71303f-6563-4b79-897f-4c4ced43b8b9" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="cb81927c5434657395381f06517f6987.png" xmlns="">0MeRoaKPzhkKU4SjjyqtC4A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

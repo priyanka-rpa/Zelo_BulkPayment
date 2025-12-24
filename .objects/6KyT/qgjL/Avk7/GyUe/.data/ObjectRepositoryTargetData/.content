@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jRgRlZ-io0CZKnUUBvJeVw" Reference="N4MTMs1NckefVWnATUiETw/GyUeR_e_WUqa8LmhjUs29w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" CVScreenId="fd4d9d20-b9bf-44e0-8372-85826b65931e" CvElementArea="412, 585, 161, 36" CvType="InputBox" DesignTimeRectangle="415, 587, 155, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-label='Template Name Filter Input' tag='INPUT' type='text' class='ag-input-field-input ag-text-field-input' aaname='' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4ff02e76-91b2-4512-ab48-496c7d5ee42d" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="fd4d9d20-b9bf-44e0-8372-85826b65931e" CvTextArea="426, 557, 125, 18" CvTextArgument="Template Name" CvType="Text" DesignTimeRectangle="428, 554, 123, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='ag-header-cell-text' parentid='undefined' tag='SPAN' type='' aaname='Template Name' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Template Name' /&gt;" Guid="7cb530e0-57f9-4fd2-b3c3-4aa40ba1659e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b18387a028a99365a6272435760ef85e.png" xmlns="">0EQb6OAmj7EiEFOIIvSCJZQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

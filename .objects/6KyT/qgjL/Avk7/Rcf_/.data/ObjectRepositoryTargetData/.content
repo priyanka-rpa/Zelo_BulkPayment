@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="s3Py2dchT0WU1sR5YyBRMA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporate.adcb.com/corporateWeb" DesignTimeRectangle="392, 374, 1145, 463" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;div&amp;gt;base-root&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;single-payment-request-initiate&amp;gt;single-payment-request-success-modal&amp;gt;aps-modal&amp;gt;div&amp;gt;div' parentid='main-container' tag='DIV' /&gt;" Guid="ca731f23-36f1-4f22-b6b7-5de73782cf5c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ADCB' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7994418697fe2578d82ca4211c4b7618.png" xmlns="">0jcTZhjCo8kuhanJI6-ld8w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
