@@ -170,7 +170,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Test" sap:VirtualizedContainerService.HintSize="660,2476.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Test" sap:VirtualizedContainerService.HintSize="666.6666666666666,3204" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="njl:JArray" Default="[new JArray()]" Name="arrAtt" />
       <Variable x:TypeArguments="njl:JObject" Default="[new JObject()]" Name="jContent" />
@@ -202,12 +202,22 @@
       <Variable x:TypeArguments="x:String" Name="base64Img" />
       <Variable x:TypeArguments="ui:Image" Name="ErrorScreenshot" />
       <Variable x:TypeArguments="x:String" Name="imagepath" />
+      <Variable x:TypeArguments="x:String" Name="vTaskname" />
+      <Variable x:TypeArguments="x:String" Name="outImagePath" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[vTaskname]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">["Teams ScreenShot"]</InArgument>
+      </Assign.Value>
+    </Assign>
     <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot" sap:VirtualizedContainerService.HintSize="450,119.33333333333333" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[ErrorScreenshot]">
       <ui:TakeScreenshot.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e539c8bd-e3d1-4e35-998f-cb1cfcdc2644" WaitForReady="COMPLETE">
@@ -222,16 +232,36 @@
         <OutArgument x:TypeArguments="x:String">[imagepath]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">[in_Config("ScreenshotsFolder").ToString+"BulkPayment_"+now.ToString("ddMMyy_hhmmss")+".png"]</InArgument>
+        <InArgument x:TypeArguments="x:String">[in_Config("ScreenshotsFolder").ToString+"BulkPayment_"+now.ToString("ddMMyy_hhmmss")+".jpeg"]</InArgument>
       </Assign.Value>
     </Assign>
     <ui:SaveImage DisplayName="Save Image" FileName="[imagepath]" sap:VirtualizedContainerService.HintSize="450,169.33333333333334" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[ErrorScreenshot]" />
+    <Assign sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[outImagePath]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[in_Config("ScreenshotsFolder").ToString+"BulkPayment_Resized"+now.ToString("ddMMyy_hhmmss")+".jpeg"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="If Not System.IO.File.Exists(inputPath) Then&#xA;    Throw New Exception(&quot;Input image not found: &quot; &amp; inputPath)&#xA;End If&#xA;&#xA;Dim img As System.Drawing.Image = Nothing&#xA;Dim bmp As System.Drawing.Bitmap = Nothing&#xA;Dim g As System.Drawing.Graphics = Nothing&#xA;&#xA;Try&#xA;    img = System.Drawing.Image.FromFile(inputPath)&#xA;&#xA;    ' Tuned for 200–250 KB&#xA;    Dim newWidth As Integer = 500&#xA;    Dim ratio As Double = img.Height / img.Width&#xA;    Dim newHeight As Integer = CInt(newWidth * ratio)&#xA;&#xA;    bmp = New System.Drawing.Bitmap(newWidth, newHeight)&#xA;    bmp.SetResolution(img.HorizontalResolution, img.VerticalResolution)&#xA;&#xA;    g = System.Drawing.Graphics.FromImage(bmp)&#xA;&#xA;    g.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality&#xA;    g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic&#xA;    g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality&#xA;    g.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality&#xA;&#xA;    g.DrawImage(img, 0, 0, newWidth, newHeight)&#xA;&#xA;    ' JPEG compression tuned for Teams&#xA;    Dim jpgEncoder As System.Drawing.Imaging.ImageCodecInfo =&#xA;        System.Drawing.Imaging.ImageCodecInfo.GetImageEncoders().&#xA;        First(Function(c) c.FormatID = System.Drawing.Imaging.ImageFormat.Jpeg.Guid)&#xA;&#xA;    Dim encoderParams As New System.Drawing.Imaging.EncoderParameters(1)&#xA;    encoderParams.Param(0) =&#xA;        New System.Drawing.Imaging.EncoderParameter(&#xA;            System.Drawing.Imaging.Encoder.Quality, 50L)&#xA;&#xA;    bmp.Save(outputPath, jpgEncoder, encoderParams)&#xA;&#xA;Catch ex As Exception&#xA;    Throw New Exception(&quot;Image resize failed: &quot; &amp; ex.Message)&#xA;&#xA;Finally&#xA;    If g IsNot Nothing Then g.Dispose()&#xA;    If bmp IsNot Nothing Then bmp.Dispose()&#xA;    If img IsNot Nothing Then img.Dispose()&#xA;End Try&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="450,197.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+      <ui:InvokeCode.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="inputPath">[imagepath]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="outputPath">[outImagePath]</InArgument>
+      </ui:InvokeCode.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeCode>
     <Assign sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="s:Byte[]">[bytes]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="s:Byte[]">[System.IO.File.ReadAllBytes( imagepath)]</InArgument>
+        <InArgument x:TypeArguments="s:Byte[]">[System.IO.File.ReadAllBytes(outImagePath)]</InArgument>
       </Assign.Value>
     </Assign>
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_2">
@@ -263,8 +293,12 @@
       <InvokeMethod.TargetObject>
         <InArgument x:TypeArguments="njl:JObject">[jimg]</InArgument>
       </InvokeMethod.TargetObject>
-      <InArgument x:TypeArguments="x:String">url</InArgument>
-      <InArgument x:TypeArguments="njl:JToken">["data:image/png;base64,"+Convert.ToBase64String(bytes)]</InArgument>
+      <InArgument x:TypeArguments="x:String">
+        <Literal x:TypeArguments="x:String">url</Literal>
+      </InArgument>
+      <InArgument x:TypeArguments="njl:JToken">
+        <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="&quot;data:image/jpeg;base64,&quot;+Convert.ToBase64String(bytes)" />
+      </InArgument>
     </InvokeMethod>
     <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="450,170.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" MethodName="Add">
       <InvokeMethod.TargetObject>
@@ -343,6 +377,14 @@
         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
       </ui:HttpClient.UrlSegments>
     </ui:HttpClient>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[Now.ToString() + &quot;,&quot; +vTaskname + &quot; Screenshot sent to teams:&quot; +  vstatus.ToString + &quot; &quot;+ vresponse+ &quot;,Success&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="450,114.66666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[vstatus.ToString + vresponse]" />
   </Sequence>
 </Activity>
