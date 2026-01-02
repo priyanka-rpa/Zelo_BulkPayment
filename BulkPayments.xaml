@@ -155,7 +155,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="BulkPayments" sap:VirtualizedContainerService.HintSize="674,30263.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="BulkPayments" sap:VirtualizedContainerService.HintSize="660,24392.666666666668" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="vPaymentTemplate" />
       <Variable x:TypeArguments="x:String" Name="vTaskname" />
@@ -196,18 +196,26 @@
       <Variable x:TypeArguments="x:String" Name="vRole" />
       <Variable x:TypeArguments="x:String" Name="envName" />
       <Variable x:TypeArguments="x:String" Name="vPortalURL" />
+      <Variable x:TypeArguments="x:Boolean" Name="LoginScreenExist" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="658,30240.666666666668" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="658,24370" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="656,28194" sap2010:WorkflowViewState.IdRef="Sequence_24">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="656,22971.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_24">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Assign sap:VirtualizedContainerService.HintSize="622,180.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_1">
@@ -241,13 +249,13 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </Assign>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome ADCB" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="622,27557.333333333332" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="07b16261-8e21-4c46-b730-c707ae235591" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome ADCB" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="622,22334.666666666668" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="07b16261-8e21-4c46-b730-c707ae235591" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="620,27358.666666666668" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="620,22136" sap2010:WorkflowViewState.IdRef="Sequence_26">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="vReadtext" />
                   </Sequence.Variables>
@@ -723,7 +731,7 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_180">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_180">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -732,15 +740,21 @@
                       </Sequence>
                     </If.Else>
                   </If>
-                  <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each payment" sap:VirtualizedContainerService.HintSize="586,23984" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[vJsonoutput]">
+                  <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each payment" sap:VirtualizedContainerService.HintSize="586,18761.333333333332" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[vJsonoutput]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="njl:JToken">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="njl:JToken" Name="payment" />
                         </ActivityAction.Argument>
-                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="560,23787.333333333332" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="560,18564.666666666668" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                           <TryCatch.Try>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="558,22690.666666666668" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="558,15385.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_44">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="x:String" Name="vFilename" />
                                 <Variable x:TypeArguments="x:String" Name="str_filepath" />
@@ -845,16 +859,16 @@
                                   </scg:List>
                                 </ui:MultipleAssign.AssignOperations>
                               </ui:MultipleAssign>
-                              <TryCatch sap2010:Annotation.AnnotationText="Data Validation" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="524,6325.333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                              <TryCatch sap2010:Annotation.AnnotationText="Data Validation" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="524,92" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <TryCatch.Try>
-                                  <Sequence DisplayName="Assigning the values from DT" sap:VirtualizedContainerService.HintSize="522,5116.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_142">
+                                  <Sequence DisplayName="Assigning the values from DT" sap:VirtualizedContainerService.HintSize="522,3897.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_142">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:String" Name="vRefNo" />
                                       <Variable x:TypeArguments="x:String" Name="vRmrks" />
@@ -1141,7 +1155,13 @@
                                         </Sequence>
                                       </If.Else>
                                     </If>
-                                    <If Condition="[CDbl(payment(&quot;paymentAmount&quot;)) &lt;= 0]" sap:VirtualizedContainerService.HintSize="488,1280.6666666666667" sap2010:WorkflowViewState.IdRef="If_18">
+                                    <If Condition="[CDbl(payment(&quot;paymentAmount&quot;)) &lt;= 0]" sap:VirtualizedContainerService.HintSize="488,1244.6666666666667" sap2010:WorkflowViewState.IdRef="If_18">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
                                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,901.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_149">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -2145,16 +2165,16 @@
                                   </Sequence>
                                 </If.Else>
                               </If>
-                              <If sap2010:Annotation.AnnotationText="Checking for Payment Method Value" Condition="[vPaymentMethod.Trim() = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="524,1164" sap2010:WorkflowViewState.IdRef="If_48">
+                              <If sap2010:Annotation.AnnotationText="Checking for Payment Method Value" Condition="[vPaymentMethod.Trim() = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="524,92" sap2010:WorkflowViewState.IdRef="If_48">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
-                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,894.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_222">
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,898.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_222">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:String" Name="vState" />
                                     </Sequence.Variables>
@@ -2189,7 +2209,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:GetAttribute>
-                                    <If Condition="[vState.Trim().ToLower() = &quot;disabled&quot;]" sap:VirtualizedContainerService.HintSize="452,408" sap2010:WorkflowViewState.IdRef="If_49">
+                                    <If Condition="[vState.Trim().ToLower() = &quot;disabled&quot;]" sap:VirtualizedContainerService.HintSize="452,412" sap2010:WorkflowViewState.IdRef="If_49">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2197,7 +2217,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
-                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,178.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_225">
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,182.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_225">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3646,17 +3666,20 @@
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="558,856" sap2010:WorkflowViewState.IdRef="Sequence_118">
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="558,2938.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_118">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:Boolean" Name="vReLoginExist" />
+                                  </Sequence.Variables>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <If sap2010:Annotation.AnnotationText="Catch block teams message" Condition="[envName.ToUpper = &quot;PROD&quot;]" sap:VirtualizedContainerService.HintSize="524,92" sap2010:WorkflowViewState.IdRef="If_42">
+                                  <If sap2010:Annotation.AnnotationText="Catch block teams message" Condition="[envName.ToUpper = &quot;PROD&quot;]" sap:VirtualizedContainerService.HintSize="524,1033.3333333333333" sap2010:WorkflowViewState.IdRef="If_42">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
@@ -3736,6 +3759,91 @@
                                     </If.Then>
                                     <If.Else>
                                       <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_208">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                  <ui:UiElementExists DisplayName="Element Exists 'DIV'" Exists="[vReLoginExist]" sap:VirtualizedContainerService.HintSize="524,143.33333333333334" sap2010:WorkflowViewState.IdRef="UiElementExists_15">
+                                    <ui:UiElementExists.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5e300d93-2b21-45be-af6c-118fbae111c5" InformativeScreenshot="924604009020c96b15332b675de634e3" Selector="&lt;webctrl tag='DIV' parentclass='grid' visibleinnertext='*You have successfully logged out*' /&gt;&lt;webctrl tag='BUTTON' aaname='*RE-LOGIN*' /&gt;" TimeoutMS="2000" WaitForReady="COMPLETE" />
+                                    </ui:UiElementExists.Target>
+                                  </ui:UiElementExists>
+                                  <If sap2010:Annotation.AnnotationText="unexpected portal logout" Condition="[vReLoginExist]" sap:VirtualizedContainerService.HintSize="524,998" sap2010:WorkflowViewState.IdRef="If_54">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If.Then>
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,728.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_235">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If sap2010:Annotation.AnnotationText="Catch block teams message" Condition="[envName.ToUpper = &quot;PROD&quot;]" sap:VirtualizedContainerService.HintSize="452,664.6666666666666" sap2010:WorkflowViewState.IdRef="If_55">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <If.Then>
+                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,404.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_236">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[&quot;{&quot;&quot;text&quot;&quot;: &quot;&quot;**The portal session ended unexpectedly and the process has been stopped. Re-initiation is required for pending transactions.&quot;&quot;**&quot;&quot;}&quot;]" BodyFormat="application/json" DisplayName="HTTP Request (legacy)Teams msg" EnableSSLVerification="True" EndPoint="[in_Config(&quot;TeamsEndpoint&quot;).ToString]" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="HttpClient_28" Method="POST" Result="[vResponseTeams]" StatusCode="[vStatusTeams]" TimeoutMS="30000">
+                                                <ui:HttpClient.Attachments>
+                                                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                </ui:HttpClient.Attachments>
+                                                <ui:HttpClient.Cookies>
+                                                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                </ui:HttpClient.Cookies>
+                                                <ui:HttpClient.Headers>
+                                                  <InArgument x:TypeArguments="x:String" x:Key="Content-Type">application/json</InArgument>
+                                                </ui:HttpClient.Headers>
+                                                <ui:HttpClient.Parameters>
+                                                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                </ui:HttpClient.Parameters>
+                                                <ui:HttpClient.UrlSegments>
+                                                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                </ui:HttpClient.UrlSegments>
+                                              </ui:HttpClient>
+                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_110" Level="Error" Message="[Now.ToString() + &quot;,&quot; +vTaskname + &quot;Teams message sent for unexpected portal logout &quot;]">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ui:LogMessage>
+                                              <ui:Break sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="Break_2" />
+                                            </Sequence>
+                                          </If.Then>
+                                          <If.Else>
+                                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_237">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </Sequence>
+                                          </If.Else>
+                                        </If>
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,94.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_238">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3857,7 +3965,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="656,1783.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_67">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="656,1135.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_67">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3877,7 +3985,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[&quot;{&quot;&quot;text&quot;&quot;: &quot;&quot;**Couldn't Process, for the Template Id - &quot;+ vPaymentTemplate+&quot; and the amount: -&quot; + vAmount+&quot;**&quot;&quot;}&quot;]" BodyFormat="application/json" DisplayName="HTTP Request (legacy)Teams msg" EnableSSLVerification="True" EndPoint="[in_Config(&quot;TeamsEndpoint&quot;).ToString]" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="HttpClient_14" Method="POST" Result="[vResponseTeams]" StatusCode="[vStatusTeams]" TimeoutMS="30000">
+                    <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[&quot;{&quot;&quot;text&quot;&quot;: &quot;&quot;Exception caused while working on Payment page, please see the screenshot below.&quot;&quot;**&quot;&quot;}&quot;]" BodyFormat="application/json" DisplayName="HTTP Request (legacy)Teams msg" EnableSSLVerification="True" EndPoint="[in_Config(&quot;TeamsEndpoint&quot;).ToString]" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="HttpClient_14" Method="POST" Result="[vResponseTeams]" StatusCode="[vStatusTeams]" TimeoutMS="30000">
                       <ui:HttpClient.Attachments>
                         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                       </ui:HttpClient.Attachments>
@@ -3990,60 +4098,6 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="622,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Error" Message="[Now.ToString + &quot;,&quot; + vtaskName +  &quot; : &quot;+ exception.Message]" />
-              <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="1000" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="622,143.33333333333334" sap2010:WorkflowViewState.IdRef="Click_41" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
-                <ui:Click.CursorPosition>
-                  <ui:CursorPosition Position="Center">
-                    <ui:CursorPosition.OffsetX>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:CursorPosition.OffsetX>
-                    <ui:CursorPosition.OffsetY>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:CursorPosition.OffsetY>
-                  </ui:CursorPosition>
-                </ui:Click.CursorPosition>
-                <ui:Click.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9418dd8e-af18-48c6-b9ae-ee684031a84e" InformativeScreenshot="a95eada5d628680964c513f0b3fd9d45" Selector="&lt;html app='chrome.exe' title='ADCB' /&gt;&lt;webctrl aaname='Dashboard' tag='DIV' innertext='Dashboard' /&gt;" WaitForReady="COMPLETE">
-                    <ui:Target.TimeoutMS>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:Target.TimeoutMS>
-                  </ui:Target>
-                </ui:Click.Target>
-              </ui:Click>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="622,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_92" Level="Info" Message="[Now.ToString() + &quot;,&quot; +vTaskname + &quot;Clicked on the Dashboard :&quot; + &quot;,Success&quot;]">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ui:LogMessage>
-              <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="2000" DelayMS="2000" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="622,143.33333333333334" sap2010:WorkflowViewState.IdRef="Click_42" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
-                <ui:Click.CursorPosition>
-                  <ui:CursorPosition Position="Center">
-                    <ui:CursorPosition.OffsetX>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:CursorPosition.OffsetX>
-                    <ui:CursorPosition.OffsetY>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:CursorPosition.OffsetY>
-                  </ui:CursorPosition>
-                </ui:Click.CursorPosition>
-                <ui:Click.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="957e635e-43ea-4716-802a-4ea613cc14df" InformativeScreenshot="0033d888ca10bb77e917eddd91531b0d" Selector="&lt;html app='chrome.exe' title='ADCB' /&gt;&lt;webctrl tag='DIV' innertext='Single Transfer' /&gt;" WaitForReady="COMPLETE">
-                    <ui:Target.TimeoutMS>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:Target.TimeoutMS>
-                  </ui:Target>
-                </ui:Click.Target>
-              </ui:Click>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="622,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_93" Level="Info" Message="[Now.ToString() + &quot;,&quot; +vTaskname + &quot;Clicked on Single Transfer :&quot; + &quot;,Success&quot;]">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ui:LogMessage>
               <Throw Exception="[New BusinessRuleException(&quot;Error while Processing the Payments: &quot; + exception.Message)]" sap:VirtualizedContainerService.HintSize="622,118.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_1" />
             </Sequence>
           </ActivityAction>
